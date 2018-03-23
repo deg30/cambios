@@ -80,8 +80,6 @@ service networking restart
 check_open_port 80 "$domain"
 check_open_port 443 "$domain"
 
-# Fetch latest version of test-new-config.sh
-check_command download_le_script test-new-config
 
 # Check if $domain exists and is reachable
 echo
