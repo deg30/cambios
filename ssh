@@ -172,7 +172,7 @@ else
 fi
 }
 webroot() {
-if eval "certbot certonly --webroot --webroot-path $NCPATH $default_le"
+if eval "certbot certonly --webroot --webroot-path /var/www/bibanto $default_le"
 then
     echo "success" > /tmp/le_test
 else
